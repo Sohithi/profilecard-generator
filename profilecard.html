@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card Generator</title>
+    <link rel="stylesheet" href="profilecard.css" />
+</head>
+
+<body>
+    <h1>🧑‍🎨 Dynamic Profile Card Generator</h1>
+
+    <form id="cardForm">
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <textarea id="bio" placeholder="Enter a short bio" required></textarea>
+        <input type="file" id="imageUpload" accept="image/*" />
+        <select id="borderStyle">
+            <option value="square">Square</option>
+            <option value="rounded">Rounded</option>
+            <option value="circle">Circle</option>
+        </select>
+        <button type="button" id="previewBtn">Preview</button>
+        <button type="submit">Generate Card</button>
+    </form>
+
+    <div id="previewContainer"></div>
+    <div id="cardsContainer"></div>
+
+    <script src="profilecard.js"></script>
+</body>
+
+</html>
